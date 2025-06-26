@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Online Apartment Sales System</title>
+		<link rel="icon" href="images/icon.jpg">
+		<link rel="stylesheet" href="CSS/photo.css">
+		<script>
+			var d = new Date();
+			var year = d.getFullYear();
+			var month = d.getMonth()+1;
+			var date = d.getDate();
+			var dates = date + " / " + month + " / " + year;
+			
+			document.write("<h1 style='color:red; text-align:right;'>"+dates+"</h1>");
+			
+			function show(event)
+			{
+				document.getElementById("image").src = event.target.src;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="heading1"><i>Luxury Apartments</i></h1>
+		
+		<div class="slider"></div>	
+		
+		<img src="images/flat1.jpg" alt="Photo" id="image">
+		<h2></h2>
+		
+		<div class="gallery">
+			<img src="images/flat1.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/duplex1.jpeg" alt="Photo" onclick="show(event)">
+			<img src="images/penthouse1.jpg" alt="photo" onclick="show(event)">
+			<img src="images/shop1.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/villa1.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/townhouse1.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/flat2.jfif" alt="Photo" onclick="show(event)">
+			<img src="images/duplex2.jpeg" alt="Photo" onclick="show(event)">
+			<img src="images/penthouse2.jpg" alt="photo" onclick="show(event)">
+			<img src="images/shop2.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/villa2.jpg" alt="Photo" onclick="show(event)">
+			<img src="images/townhouse2.jpg" alt="Photo" onclick="show(event)">
+		</div>
+		
+		<div id="footer">
+			<h1 id="footerheading1">Find your <strong>Dream Apartment</strong> today!<br>Your Dream Home is Just a touch away</h1>
+			<br>
+			<h2 class="use">✅ Search properties any time anywhere</h2>
+			<h2 class="use">✅ Buy an Apartment with your expect budjet</h2>
+			<h2 class="use">✅ Also sale apartment in a good price</h2>
+			<br>
+		</div>
+	</body>
+</html>

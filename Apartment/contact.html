@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Online Apartment Sales System</title>
+		<link rel="icon" href="images/icon.jpg">
+		<link rel="stylesheet" href="CSS/contact.css">
+	</head>
+	<body>		
+		<div>
+		<h2>Get in Touch</h2>
+        <p id="para1">If you have questions?<br>You need assistance?<br>  Feel free to contact us using the form below or through the provided contact information.</p>
+        <form id="contactForm" action="contact.php" method="post" onsubmit="return check()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+                
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+                
+			<label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+                
+			<input type="submit" name="btnsubmit" id="btnsubmit" value="Submit">
+        </form>
+			
+		<center>
+			<p>Feel free to contact us via our social media accounts or by phone:</p>
+           
+            <h4><a href="https://www.instagram.com">Instagram </a> |
+            <a href="https://www.facebook.com">  Facebook </a> | 📞+94 772345677 </h4>
+        </center>    
+		
+		<footer>
+			<p>&copy; 2024 Apartment Sales System. All rights reserved.</p>
+		</footer>
+		</div>
+	</body>
+</html>
